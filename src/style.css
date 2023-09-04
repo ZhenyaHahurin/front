@@ -1,0 +1,407 @@
+nav {
+  background-color: #ff914d;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стилі для списку пунктів меню */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє пунктам меню переноситися на новий рядок при зменшенні екрана */
+  justify-content: center; /* Вирівнюємо по центру */
+  background-color: #ff914d;
+  font-family: Arial, sans-serif;
+}
+
+/* Стилі для пунктів меню */
+li {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Додатковий відступ між пунктами меню */
+}
+
+/* Стилі для посилань */
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  border: 2px solid transparent; /* По замовчуванню без контуру */
+}
+
+/* Зміна кольору посилань при наведенні */
+a:hover {
+  background-color: transparent;
+  border-color: white; /* Змінюємо контур при наведенні */
+}
+
+/* Медіа-запит для зменшення екрана */
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column; /* Змінюємо на стовпець при зменшенні екрана */
+    align-items: center; /* Вирівнюємо по центру */
+  }
+  li {
+    font-size: 14px;
+    margin: 5px 0; /* Додатковий відступ між пунктами меню */
+  }
+  a {
+    padding: 5px 10px; /* Зменшуємо висоту і ширину кнопок */
+  }
+}
+
+  .photo-container {
+    position: relative;
+  }
+  
+  /* Стилі для фото */
+  .photo-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Стилі для кнопки "Зробити замовлення" */
+  .order-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Зміна кольору кнопки при наведенні */
+  .order-button:hover {
+    background-color: #ff723d;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Розмитий фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* Заповнює фон весь доступний простір */
+    background-repeat: repeat; /* Запобігає повторенню зображення */
+    background-position: center; 
+    z-index: 999; 
+  }
+  
+  .order-form-container {
+    background-color: #ff914d; /* Основний колір форми */
+    padding: 20px;
+    border-radius: 10px; /* Закруглені краї форми */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тінь для форми */
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Вертикально розміщуємо елементи у формі */
+    align-items: center; /* Центруємо елементи по горизонталі */
+  }
+  
+  /* Стилі для кнопки "Закрити" */
+  .close-button, button[type="submit"] {
+    background-color: #ff7f00; /* Темно-помаранчевий колір кнопок */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Закруглені краї кнопок */
+    cursor: pointer;
+    margin: 10px 0; /* Відступи між кнопками і іншими елементами форми */
+    width: 50%; /* Ширина кнопок - половина від форми */
+  }
+  
+  .close-button:hover, button[type="submit"]:hover {
+    background-color: #ff6b00; /* Зміна кольору при наведенні на кнопки */
+  }
+  
+  /* Стилі для полів форми */
+  .order-form-container input {
+    width: 60%; /* Змінено ширину полів на 60% */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ff914d; /* Колір рамки полів форми */
+    border-radius: 5px;
+    text-align: left; /* Вирівнювання тексту вліво */
+  }
+  
+  /* Стилі для кнопки "Відправити замовлення" */
+  .order-form-container button[type="submit"] {
+    background-color: #ff7f00; /* Темно-помаранчевий колір кнопки */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Закруглені краї кнопки */
+    cursor: pointer;
+  }
+  
+  .order-form-container button[type="submit"]:hover {
+    background-color: #ff6b00; /* Зміна кольору при наведенні на кнопку */
+  }
+  
+  /* Стилі для тексту "Зробити замовлення" */
+  .order-text {
+    color: #777; /* Сірий колір тексту */
+    font-size: 18px; /* Розмір тексту */
+    margin-bottom: 20px; /* Відступ знизу */
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 50px; /* Збільште розмір шрифту */
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    text-shadow: -1px -1px 0 #FFA500, 1px -1px 0 #FFA500, -1px 1px 0 #FFA500, 1px 1px 0 #FFA500; /* Додайте помаранчевий контур */
+  }
+  
+  .text-line {
+    margin: 5px 0; /* Відстань між рядками */
+  }
+
+  .advantages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10;
+  }
+  
+  /* Стилі для окремої переваги */
+  .advantages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #94b9ff, #ff914d); /* Градієнтний фон */
+    padding: 20px; /* Додайте відступи для зручності */
+    position: relative;
+    z-index: 1;
+    margin-bottom: -20px;
+  }
+  
+  .advantage {
+    text-align: center;
+    width: calc(15.15% - 20px); /* Зменшена ширина блоку з перевагою */
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .orange-frame {
+    border: 1px solid #ff914d; /* Помаранчева рамка товщиною 1px */
+    padding: 5px; /* Відступ всередині рамки */
+    text-align: center;
+    background: transparent; /* Прозорий фон рамки, щоб залишити градієнт на фоні блоку */
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  img {
+    max-width: 100%; /* Зменшує розмір фотографій, щоб вони не займали весь екран */
+    height: auto;
+  }
+  
+  p {
+    margin-top: 10px;
+    color: #fff; 
+    font-size: 17px;/* Білий текст під фото */
+  }
+
+  .advantage h3 {
+    margin: 0;
+    font-size: 18px; /* Розмір заголовка */
+  }
+
+
+  .gallery-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #94b9ff, #ff914d); /* Градієнтний фон */
+    border: 2px solid orange;
+    border-radius: 5px;
+    max-width: 100%;
+    margin: 0 auto; /* Розташування по центру */
+    position: relative;
+    z-index: 1; /* Забезпечте, що галерея нижче за блоком "Наші переваги" */
+  }
+  
+  .gallery-container h2 {
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 5px;
+    border: 3px solid orange;
+    border-radius: 3px;
+  }
+
+  .specialization {
+    background: linear-gradient(to right, #94b9ff, #ff914d);
+    margin-top: -10px; /* Для вирівнювання фону з попереднім блоком */
+    padding: 20px 0;
+    text-align: center; /* Центруємо текст заголовку */
+  }
+  
+  /* Стилі для контенту */
+  .specialization-content {
+    background: #ff914d;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .specialization-content h2 {
+    color: #ff914d; /* Помаранчевий колір тексту заголовку */
+    border: 4px solid #FF6A00; /* Помаранчева рамка навколо заголовку */
+    border-radius: 5px; /* Закруглені кути рамки */
+    background: #fff; /* Білий фон рамки */
+    display: inline-block; /* Щоб рамка обводила заголовок */
+    padding: 10px; /* Відступи від рамки до тексту */
+    margin: 0 auto 10px; /* Відступ знизу для вирівнювання */
+  }
+  
+  .specialization-content p {
+    color: #fff; /* Колір тексту */
+    margin-bottom: 10px; /* Розмір відступу після тексту */
+  }
+  
+  /* Стилі для заголовка "Гарантуємо!" */
+  .specialization-content h3 {
+    color: #ff914d; /* Помаранчевий колір тексту */
+    border: 3px solid #FF6A00; /* Помаранчева рамка навколо заголовку */
+    border-radius: 5px; /* Закруглені кути рамки */
+    background: #fff; /* Білий фон рамки */
+    display: inline-block; /* Щоб рамка обводила заголовок */
+    padding: 5px 10px; /* Відступи від рамки до тексту */
+    margin: 0 auto 10px; /* Відступ знизу для вирівнювання */
+  }
+  
+  /* Стилі для блоку з картинками */
+  .specialization-images {
+    background: #ff914d; /* Помаранчевий фон для блоку з картинками */
+    padding: 20px 0;
+    margin-top: -20px; /* Вирівнюємо фон з блоком контенту */
+    display: flex;
+    justify-content: center; /* Рівномірно розподіляємо елементи по ширині */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    flex-wrap: wrap; /* Обертаємо на новий ряд, якщо не поміщаються */
+  }
+
+  .specialization-image {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .specialization-image h4 {
+    color: #ffffff; /* Колір тексту заголовку над картинкою */
+    margin: 10px 0;
+    font-size: 18px; /* Відступи навколо заголовку */
+  }
+  
+  .specialization-images img {
+    width: 280px; /* Розмір картинок */
+    height: auto;
+    background: #ff914d; /* Помаранчевий фон для картинок */
+    padding: 0; /* Відступи від рамки */
+    border-radius: 5px; /* Закруглені кути для картинок */
+    margin: 0 10px; /* Відступ між картинками */
+  }
+  
+  .contacts {
+    background: linear-gradient(to right, #94b9ff, #ff914d);
+    padding: 20px 0;
+    margin-top: -10px; /* Вирівнюємо фон з попереднім блоком */
+    text-align: center;
+  }
+  
+  /* Стилі для заголовку "Контакти" */
+  .contacts h2 {
+    color: #ff914d; /* Колір тексту заголовку */
+    border: 4px solid #FF6A00; /* Помаранчева рамка навколо заголовку */
+    border-radius: 5px; /* Закруглені кути рамки */
+    background: #fff; /* Білий фон рамки */
+    display: inline-block; /* Щоб рамка обводила заголовок */
+    padding: 10px; /* Відступи від рамки до тексту */
+    margin: 0 auto 20px; /* Відступ знизу для вирівнювання */
+  }
+  
+  /* Стилі для блоку контактної інформації */
+  .contact-info {
+    display: flex;
+    justify-content: center; /* Рівномірно розподіляємо елементи по ширині */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+  }
+  
+  /* Стилі для кожного елемента контактної інформації */
+  .contact-item {
+    text-align: center;
+    margin: 20px;
+    color: #fff; /* Колір тексту */
+  }
+  
+  .contact-item p {
+    margin-bottom: 10px;
+    font-size: 20px; /* Розмір відступу після тексту */
+  }
+  
+  .contact-item a {
+    color: #ff914d; /* Колір посилань */
+    text-decoration: none; /* Зняти підкреслення з посилань */
+    font-weight: bold; /* Жирний текст для посилань */
+    font-size: 24px; /* Розмір тексту посилань */
+    transition: color 0.3s; /* Плавна зміна кольору при наведенні */
+  }
+  
+  .contact-item a:hover {
+    color: #FF6A00; /* Колір посилань при наведенні */
+  }
+
+  .video-container {
+    text-align: center;
+    background: linear-gradient(to right, #94b9ff, #ff914d); /* Ваш градієнтний фон */
+    padding: 20px 0;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Стилі для заголовка над відео */
+  .video-container h2 {
+    color: #fff; /* Помаранчевий колір тексту */
+    font-size: 24px; /* Розмір шрифту заголовка */
+    margin-top: 0; /* Відступ відгорі заголовка */
+  }
+  
+  /* Стилі для самого відео */
+  .video-container video {
+    width: 60%; /* Ширина відео контейнера */
+    max-width: 100%; /* Максимальна ширина відео (адаптивність) */
+    height: auto; /* Автоматична висота відео */
+    display: block; /* Забезпечує блоковий рівень для центрування */
+    margin: 0 auto; /* Відступи для центрування відео по горизонталі */
+    background: #ff914d; /* Помаранчевий фон відео контейнера */
+    padding: 10px; /* Відступи відео від контейнера */
+    border-radius: 10px; /* Закруглені кути для відео контейнера */
+  }
+
