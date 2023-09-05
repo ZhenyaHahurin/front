@@ -20,22 +20,10 @@ function App() {
 
   const image1Url = `${process.env.PUBLIC_URL}/photos/photo1.jpg`;
   const image6Url = `${process.env.PUBLIC_URL}/photos/photo3.jpg`;
-  const image8Url = `${process.env.PUBLIC_URL}/photos/photo5.jpg`;
   const image9Url = `${process.env.PUBLIC_URL}/photos/photo6.jpg`;
-  const image10Url = `${process.env.PUBLIC_URL}/photos/photo7.jpg`;
   const image11Url = `${process.env.PUBLIC_URL}/photos/photo8.jpg`;
-  const image12Url = `${process.env.PUBLIC_URL}/photos/photo9.jpg`;
-  const image13Url = `${process.env.PUBLIC_URL}/photos/photo10.jpg`;
-  const image14Url = `${process.env.PUBLIC_URL}/photos/photo11.jpg`;
-  const image15Url = `${process.env.PUBLIC_URL}/photos/photo12.jpg`;
-  const image16Url = `${process.env.PUBLIC_URL}/photos/photo13.jpg`;
-  const image17Url = `${process.env.PUBLIC_URL}/photos/photo14.jpg`;
-  const image18Url = `${process.env.PUBLIC_URL}/photos/photo15.jpg`;
   const image19Url = `${process.env.PUBLIC_URL}/photos/photo16.jpg`;
-  const image20Url = `${process.env.PUBLIC_URL}/photos/photo17.jpg`;
-  const image21Url = `${process.env.PUBLIC_URL}/photos/specialization1.png`;
-  const image22Url = `${process.env.PUBLIC_URL}/photos/specialization2.png`;
-  const image23Url = `${process.env.PUBLIC_URL}/photos/specialization3.png`;
+  
 
   const image2Url = `${process.env.PUBLIC_URL}/photos/toolbar1.jpg`;
   const image3Url = `${process.env.PUBLIC_URL}/photos/toolbar1.jpg`;
@@ -198,43 +186,13 @@ function App() {
         <img width="100%" src={image6Url} alt="Фото 6" />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src={image8Url} alt="Фото 8" />
-      </Carousel.Item>
-      <Carousel.Item>
         <img width="100%" src={image9Url} alt="Фото 9" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image10Url} alt="Фото 10" />
       </Carousel.Item>
       <Carousel.Item>
         <img width="100%" src={image11Url} alt="Фото 11" />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" src={image12Url} alt="Фото 12" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image13Url} alt="Фото 13" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image14Url} alt="Фото 14" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image15Url} alt="Фото 15" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image16Url} alt="Фото 16" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image17Url} alt="Фото 17" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image18Url} alt="Фото 18" />
-      </Carousel.Item>
-      <Carousel.Item>
         <img width="100%" src={image19Url} alt="Фото 19" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image20Url} alt="Фото 20" />
       </Carousel.Item>
     </Carousel>
               </div>
