@@ -77,14 +77,14 @@ a:hover {
     position: absolute;
     bottom: 20px;
     top: 100px;
-    left: 20px; /* Змінено right на left */
+    left: 80px; /* Змінено right на left */
     background-color: #4792f5;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: -300px; /* Додано зсув вгору для зміни висоти */
+    margin-top: -30px; /* Додано зсув вгору для зміни висоти */
 }
   
   /* Зміна кольору кнопки при наведенні */
