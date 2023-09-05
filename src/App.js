@@ -242,7 +242,7 @@ function App() {
                   <button className="close-button" onClick={closeOrderForm}>Закрити</button>
                   <h2>Зробити замовлення</h2>
                   <form onSubmit={handleFormSubmit}>
-                  <input type="text" placeholder="Ім'я" value={name} onChange={(e) => setName(e.target.value)} />
+                  <input type="text" placeholder="ПІБ" value={name} onChange={(e) => setName(e.target.value)} />
                   <input type="email" placeholder="Електронна пошта" value={email} onChange={(e) => setEmail(e.target.value)} />
                   <InputMask mask="+380 99 999 99 99" placeholder="Телефон" value={phone} onChange={(e) => setPhone(e.target.value)} />
                   <input type="text" placeholder="Адреса" value={address} onChange={(e) => setAddress(e.target.value)} />
