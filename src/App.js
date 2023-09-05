@@ -23,8 +23,9 @@ function App() {
   const image9Url = `${process.env.PUBLIC_URL}/photos/photo6.jpg`;
   const image11Url = `${process.env.PUBLIC_URL}/photos/photo8.jpg`;
   const image19Url = `${process.env.PUBLIC_URL}/photos/photo16.jpg`;
-  
-
+  const image21Url = `${process.env.PUBLIC_URL}/photos/specialization1.png`;
+  const image22Url = `${process.env.PUBLIC_URL}/photos/specialization2.png`;
+  const image23Url = `${process.env.PUBLIC_URL}/photos/specialization3.png`;
   const image2Url = `${process.env.PUBLIC_URL}/photos/toolbar1.jpg`;
   const image3Url = `${process.env.PUBLIC_URL}/photos/toolbar1.jpg`;
   const image4Url = `${process.env.PUBLIC_URL}/photos/toolbar1.jpg`;
@@ -182,19 +183,19 @@ function App() {
               <h2>Фотогалерея</h2>
               <div className="gallery">
               <Carousel cols={2} rows={1} gap={10} loop>
-      <Carousel.Item>
-        <img width="100%" src={image6Url} alt="Фото 6" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image9Url} alt="Фото 9" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image11Url} alt="Фото 11" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="100%" src={image19Url} alt="Фото 19" />
-      </Carousel.Item>
-    </Carousel>
+              <Carousel.Item>
+              <img width="100%" src={image6Url} alt="Фото 6" />
+              </Carousel.Item>
+              <Carousel.Item>
+              <img width="100%" src={image9Url} alt="Фото 9" />
+              </Carousel.Item>
+              <Carousel.Item>
+              <img width="100%" src={image11Url} alt="Фото 11" />
+              </Carousel.Item>
+              <Carousel.Item>
+              <img width="100%" src={image19Url} alt="Фото 19" />
+              </Carousel.Item>
+              </Carousel>
               </div>
             </div>
            </div>
