@@ -202,7 +202,7 @@ function App() {
 
            <div id="specialization" className="specialization">
            <div className="specialization-content">
-            <h2>Ми спеціалізуємось</h2>
+            <h2></h2>
             <p></p>
             <div className="guarantee">
             <h3>Гарантуємо!</h3>
