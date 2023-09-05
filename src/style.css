@@ -77,7 +77,7 @@ a:hover {
     position: absolute;
     bottom: 20px;
     top: 100px;
-    left: 20px; /* Змінено right на left */
+    left: 80px; /* Змінено right на left */
     background-color: #4792f5;
     color: white;
     border: none;
