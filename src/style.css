@@ -1,5 +1,5 @@
 nav {
-  background-color: #ff914d;
+  background-color: #4792f5;
   position: fixed;
   width: 100%;
   top: 0;
@@ -17,7 +17,7 @@ ul {
   display: flex;
   flex-wrap: wrap; /* Дозволяє пунктам меню переноситися на новий рядок при зменшенні екрана */
   justify-content: center; /* Вирівнюємо по центру */
-  background-color: #ff914d;
+  background-color: #4792f5;
   font-family: Arial, sans-serif;
 }
 
@@ -76,18 +76,19 @@ a:hover {
   .order-button {
     position: absolute;
     bottom: 20px;
-    right: 20px;
-    background-color: #ff914d;
+    left: 20px; /* Змінено right на left */
+    background-color: #4792f5;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
+    margin-top: -30px; /* Додано зсув вгору для зміни висоти */
+}
   
   /* Зміна кольору кнопки при наведенні */
   .order-button:hover {
-    background-color: #ff723d;
+    background-color: #4792f5;
   }
 
   .modal {
@@ -107,7 +108,7 @@ a:hover {
   }
   
   .order-form-container {
-    background-color: #ff914d; /* Основний колір форми */
+    background-color: #4792f5; /* Основний колір форми */
     padding: 20px;
     border-radius: 10px; /* Закруглені краї форми */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тінь для форми */
@@ -120,7 +121,7 @@ a:hover {
   
   /* Стилі для кнопки "Закрити" */
   .close-button, button[type="submit"] {
-    background-color: #ff7f00; /* Темно-помаранчевий колір кнопок */
+    background-color: #18529e; /* Темно-помаранчевий колір кнопок */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -131,7 +132,7 @@ a:hover {
   }
   
   .close-button:hover, button[type="submit"]:hover {
-    background-color: #ff6b00; /* Зміна кольору при наведенні на кнопки */
+    background-color: #abc7eb; /* Зміна кольору при наведенні на кнопки */
   }
   
   /* Стилі для полів форми */
@@ -139,14 +140,14 @@ a:hover {
     width: 60%; /* Змінено ширину полів на 60% */
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ff914d; /* Колір рамки полів форми */
+    border: 1px solid #4792f5; /* Колір рамки полів форми */
     border-radius: 5px;
     text-align: left; /* Вирівнювання тексту вліво */
   }
   
   /* Стилі для кнопки "Відправити замовлення" */
   .order-form-container button[type="submit"] {
-    background-color: #ff7f00; /* Темно-помаранчевий колір кнопки */
+    background-color: #18529e; /* Темно-помаранчевий колір кнопки */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -155,7 +156,7 @@ a:hover {
   }
   
   .order-form-container button[type="submit"]:hover {
-    background-color: #ff6b00; /* Зміна кольору при наведенні на кнопку */
+    background-color: #abc7eb; /* Зміна кольору при наведенні на кнопку */
   }
   
   /* Стилі для тексту "Зробити замовлення" */
@@ -174,7 +175,7 @@ a:hover {
     font-weight: bold;
     color: white;
     text-align: left;
-    text-shadow: -1px -1px 0 #FFA500, 1px -1px 0 #FFA500, -1px 1px 0 #FFA500, 1px 1px 0 #FFA500; /* Додайте помаранчевий контур */
+    text-shadow: -1px -1px 0 #4792f5, 1px -1px 0 #4792f5, -1px 1px 0 #4792f5, 1px 1px 0 #4792f5; /* Додайте помаранчевий контур */
   }
   
   .text-line {
@@ -192,7 +193,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: linear-gradient(to right, #94b9ff, #ff914d); /* Градієнтний фон */
+    background: white; 
     padding: 20px; /* Додайте відступи для зручності */
     position: relative;
     z-index: 1;
@@ -207,10 +208,10 @@ a:hover {
   }
   
   .orange-frame {
-    border: 1px solid #ff914d; /* Помаранчева рамка товщиною 1px */
+    border: 1px solid #4792f5; /* Помаранчева рамка товщиною 1px */
     padding: 5px; /* Відступ всередині рамки */
     text-align: center;
-    background: transparent; /* Прозорий фон рамки, щоб залишити градієнт на фоні блоку */
+    background: #abc7eb; /* Прозорий фон рамки, щоб залишити градієнт на фоні блоку */
     border-radius: 5px;
     position: relative;
   }
@@ -222,7 +223,7 @@ a:hover {
   
   p {
     margin-top: 10px;
-    color: #fff; 
+    color: black; 
     font-size: 17px;/* Білий текст під фото */
   }
 
@@ -235,8 +236,8 @@ a:hover {
   .gallery-container {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to right, #94b9ff, #ff914d); /* Градієнтний фон */
-    border: 2px solid orange;
+    background: white;
+    border: 2px solid #4792f5;
     border-radius: 5px;
     max-width: 100%;
     margin: 0 auto; /* Розташування по центру */
@@ -250,12 +251,12 @@ a:hover {
     z-index: 2;
     display: inline-block;
     padding: 5px;
-    border: 3px solid orange;
+    border: 3px solid #4792f5;
     border-radius: 3px;
   }
 
   .specialization {
-    background: linear-gradient(to right, #94b9ff, #ff914d);
+    background: white;
     margin-top: -10px; /* Для вирівнювання фону з попереднім блоком */
     padding: 20px 0;
     text-align: center; /* Центруємо текст заголовку */
@@ -263,7 +264,7 @@ a:hover {
   
   /* Стилі для контенту */
   .specialization-content {
-    background: #ff914d;
+    background: #4792f5;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -272,26 +273,26 @@ a:hover {
   }
   
   .specialization-content h2 {
-    color: #ff914d; /* Помаранчевий колір тексту заголовку */
-    border: 4px solid #FF6A00; /* Помаранчева рамка навколо заголовку */
+    color: black; /* Помаранчевий колір тексту заголовку */
+    border: 4px solid #4792f5; /* Помаранчева рамка навколо заголовку */
     border-radius: 5px; /* Закруглені кути рамки */
-    background: #fff; /* Білий фон рамки */
+    background: white; /* Білий фон рамки */
     display: inline-block; /* Щоб рамка обводила заголовок */
     padding: 10px; /* Відступи від рамки до тексту */
     margin: 0 auto 10px; /* Відступ знизу для вирівнювання */
   }
   
   .specialization-content p {
-    color: #fff; /* Колір тексту */
+    color: black; /* Колір тексту */
     margin-bottom: 10px; /* Розмір відступу після тексту */
   }
   
   /* Стилі для заголовка "Гарантуємо!" */
   .specialization-content h3 {
-    color: #ff914d; /* Помаранчевий колір тексту */
-    border: 3px solid #FF6A00; /* Помаранчева рамка навколо заголовку */
+    color: black; /* Помаранчевий колір тексту */
+    border: 3px solid #4792f5; /* Помаранчева рамка навколо заголовку */
     border-radius: 5px; /* Закруглені кути рамки */
-    background: #fff; /* Білий фон рамки */
+    background: white; /* Білий фон рамки */
     display: inline-block; /* Щоб рамка обводила заголовок */
     padding: 5px 10px; /* Відступи від рамки до тексту */
     margin: 0 auto 10px; /* Відступ знизу для вирівнювання */
@@ -299,7 +300,7 @@ a:hover {
   
   /* Стилі для блоку з картинками */
   .specialization-images {
-    background: #ff914d; /* Помаранчевий фон для блоку з картинками */
+    background: white; /* Помаранчевий фон для блоку з картинками */
     padding: 20px 0;
     margin-top: -20px; /* Вирівнюємо фон з блоком контенту */
     display: flex;
@@ -314,7 +315,7 @@ a:hover {
   }
 
   .specialization-image h4 {
-    color: #ffffff; /* Колір тексту заголовку над картинкою */
+    color: black; /* Колір тексту заголовку над картинкою */
     margin: 10px 0;
     font-size: 18px; /* Відступи навколо заголовку */
   }
@@ -322,14 +323,14 @@ a:hover {
   .specialization-images img {
     width: 280px; /* Розмір картинок */
     height: auto;
-    background: #ff914d; /* Помаранчевий фон для картинок */
+    background: white; /* Помаранчевий фон для картинок */
     padding: 0; /* Відступи від рамки */
     border-radius: 5px; /* Закруглені кути для картинок */
     margin: 0 10px; /* Відступ між картинками */
   }
   
   .contacts {
-    background: linear-gradient(to right, #94b9ff, #ff914d);
+    background: white;
     padding: 20px 0;
     margin-top: -10px; /* Вирівнюємо фон з попереднім блоком */
     text-align: center;
@@ -337,10 +338,10 @@ a:hover {
   
   /* Стилі для заголовку "Контакти" */
   .contacts h2 {
-    color: #ff914d; /* Колір тексту заголовку */
-    border: 4px solid #FF6A00; /* Помаранчева рамка навколо заголовку */
+    color: black; /* Колір тексту заголовку */
+    border: 4px solid #4792f5; /* Помаранчева рамка навколо заголовку */
     border-radius: 5px; /* Закруглені кути рамки */
-    background: #fff; /* Білий фон рамки */
+    background: white; /* Білий фон рамки */
     display: inline-block; /* Щоб рамка обводила заголовок */
     padding: 10px; /* Відступи від рамки до тексту */
     margin: 0 auto 20px; /* Відступ знизу для вирівнювання */
@@ -357,7 +358,7 @@ a:hover {
   .contact-item {
     text-align: center;
     margin: 20px;
-    color: #fff; /* Колір тексту */
+    color: black; /* Колір тексту */
   }
   
   .contact-item p {
@@ -366,7 +367,7 @@ a:hover {
   }
   
   .contact-item a {
-    color: #ff914d; /* Колір посилань */
+    color: #4792f5; /* Колір посилань */
     text-decoration: none; /* Зняти підкреслення з посилань */
     font-weight: bold; /* Жирний текст для посилань */
     font-size: 24px; /* Розмір тексту посилань */
@@ -374,12 +375,12 @@ a:hover {
   }
   
   .contact-item a:hover {
-    color: #FF6A00; /* Колір посилань при наведенні */
+    color: #18529e; /* Колір посилань при наведенні */
   }
 
   .video-container {
     text-align: center;
-    background: linear-gradient(to right, #94b9ff, #ff914d); /* Ваш градієнтний фон */
+    background: white; 
     padding: 20px 0;
     margin-top: -10px;
     position: relative;
@@ -388,7 +389,7 @@ a:hover {
   
   /* Стилі для заголовка над відео */
   .video-container h2 {
-    color: #fff; /* Помаранчевий колір тексту */
+    color: black; /* Помаранчевий колір тексту */
     font-size: 24px; /* Розмір шрифту заголовка */
     margin-top: 0; /* Відступ відгорі заголовка */
   }
@@ -400,7 +401,7 @@ a:hover {
     height: auto; /* Автоматична висота відео */
     display: block; /* Забезпечує блоковий рівень для центрування */
     margin: 0 auto; /* Відступи для центрування відео по горизонталі */
-    background: #ff914d; /* Помаранчевий фон відео контейнера */
+    background: #4792f5; /* Помаранчевий фон відео контейнера */
     padding: 10px; /* Відступи відео від контейнера */
     border-radius: 10px; /* Закруглені кути для відео контейнера */
   }
