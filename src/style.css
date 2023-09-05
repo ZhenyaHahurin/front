@@ -83,7 +83,7 @@ a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: -30px; /* Додано зсув вгору для зміни висоти */
+    margin-top: -300px; /* Додано зсув вгору для зміни висоти */
 }
   
   /* Зміна кольору кнопки при наведенні */
