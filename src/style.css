@@ -76,7 +76,7 @@ a:hover {
   .order-button {
     position: absolute;
     top: 65%;
-    left: 80px; /* Змінено right на left */
+    left: 100px; /* Змінено right на left */
     background-color: #4792f5;
     color: white;
     border: none;
