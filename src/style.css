@@ -75,7 +75,7 @@ a:hover {
   /* Стилі для кнопки "Зробити замовлення" */
   .order-button {
     position: absolute;
-    bottom: 20px;
+    bottom: 200px;
     /*top: 100px;*/
     left: 80px; /* Змінено right на left */
     background-color: #4792f5;
